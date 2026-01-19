@@ -86,7 +86,10 @@ Node navigasi menggunakan 5 state utama:
 | **DONE**   | Berhenti setelah semua waypoint selesai |
 
 ---
+<h3 align="center">
 Untuk menjalankan simulasi dan program navigasi otonom, pengguna terlebih dahulu membuat workspace ROS 2 dengan struktur standar, kemudian masuk ke direktori workspace melalui terminal menggunakan perintah cd workspace. Setelah itu, pastikan semua paket sudah ter-build dengan menjalankan colcon build, lalu aktifkan lingkungan ROS dengan source install/setup.bash. Selanjutnya, simulasi Gazebo dijalankan menggunakan perintah ros2 launch articubot_one launch_sim.launch.py, yang akan memuat robot dan dunia simulasi obstacles.world. Setelah Gazebo terbuka dan robot muncul di lingkungan simulasi, buka terminal baru, kembali masuk ke workspace dengan cd workspace, jalankan kembali source install/setup.bash, kemudian jalankan program navigasi otonom berbasis FSM menggunakan perintah ros2 run fsm_nav fsm_nav. Program akan langsung mulai mengontrol robot untuk mengikuti waypoint yang telah ditentukan menggunakan feedback odometry.
+</h3>
+
 
 
 
