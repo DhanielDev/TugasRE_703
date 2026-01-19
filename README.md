@@ -34,5 +34,53 @@ Kontrol gerak dikirim melalui topik **`/cmd_vel`**, sedangkan posisi robot dibac
 
 ## 📁 Struktur Workspace
 
-Diasumsikan nama workspace kamu:
+workspace/
+│
+├── src/
+│ ├── articubot_one/
+│ │ ├── launch/
+│ │ │ └── launch_sim.launch.py
+│ │ │
+│ ├── worlds/
+│ │ └── obstacles.world <-- dunia Gazebo kamu
+│ │
+│ └── fsm_nav/
+│ ├── setup.py
+│ ├── package.xml
+│ └── fsm_nav/
+│ └── fsm_nav.py <-- program FSM kamu
+│
+└── build/
+└── install/
+└── log/
+
+---
+
+## 🌍 Dunia Gazebo
+
+File dunia simulasi ditempatkan di:
+
+workspace/src/articubot_one/worlds/obstacles.world
+
+
+Pastikan di **launch file** terdapat baris seperti:
+
+```python
+world_file = os.path.join(
+    get_package_share_directory('articubot_one'),
+    'worlds',
+    'obstacles.world'
+)
+
+## 🤖 Algoritma Navigasi (FSM)
+
+Node navigasi menggunakan 5 state utama:
+| State      | Fungsi                                  |
+| ---------- | --------------------------------------- |
+| **IDLE**   | Menunggu & memilih waypoint             |
+| **ROTATE** | Memutar robot menghadap target          |
+| **MOVE**   | Maju + belok halus (smooth path)        |
+| **NEXT**   | Pindah ke waypoint berikutnya           |
+| **DONE**   | Berhenti setelah semua waypoint selesai |
+
 
