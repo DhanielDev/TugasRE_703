@@ -87,5 +87,3 @@ Node navigasi menggunakan 5 state utama:
 
 ---
 
-## 🤖 🚀 Langkah Menjalankan Simulasi
-### 🛠️ 1) Build Workspace (pertama kali)
