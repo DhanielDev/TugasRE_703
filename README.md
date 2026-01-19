@@ -81,8 +81,43 @@ Node navigasi menggunakan 5 state utama:
 Buka terminal:
 
 *cd ~/workspace*
+*colcon build*
 
-colcon build
+Setelah selesai:
+*source install/setup.bash*
+
+## 🖥️ 2) Jalankan Gazebo + Robot
+Terminal 1:
+
+*cd ~/workspace*
+*source install/setup.bash*
+*ros2 launch articubot_one launch_sim.launch.py*
+
+## 🤖 3) Jalankan Navigasi Autonomous (FSM)
+
+Buka tab terminal baru:
+
+*cd ~/workspace*
+*source install/setup.bash*
+*ros2 run fsm_nav fsm_nav*
+
+
+Jika berhasil, akan muncul log seperti:
+
+FSM Waypoint Navigator Started
+Going to waypoint 1
+Going to waypoint 2
+...
+
+📡 Topik ROS yang Dipakai
+Topik	Kegunaan
+
+| **/diff_cont/odom**   | Membaca posisi & orientasi robot |
+| **/cmd_vel**          | Mengirim perintah gerak ke robot |
+	
+	
+
+
 
 
 
