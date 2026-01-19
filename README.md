@@ -87,3 +87,19 @@ Node navigasi menggunakan 5 state utama:
 
 ---
 
+---
+
+## 🧠 Deskripsi Singkat
+
+Proyek ini bertujuan untuk mengembangkan **sistem navigasi otonom berbasis Finite State Machine (FSM)** pada robot differential drive di lingkungan simulasi **Gazebo (ROS 2 Humble).**
+
+Robot akan:
+- Mengikuti daftar **waypoint** yang sudah ditentukan  
+- Memutar badan terlebih dahulu (**ROTATE**)  
+- Bergerak maju sambil melakukan koreksi arah (**MOVE — smooth turning**)  
+- Berpindah ke waypoint berikutnya (**NEXT**)  
+- Berhenti otomatis saat selesai (**DONE**)  
+
+Kontrol gerak dikirim melalui topik **`/cmd_vel`**, sedangkan posisi robot dibaca dari **`/diff_cont/odom`**.
+
+---
