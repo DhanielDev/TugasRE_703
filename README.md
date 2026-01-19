@@ -85,7 +85,7 @@ Node navigasi menggunakan 5 state utama:
 | **NEXT**   | Pindah ke waypoint berikutnya           |
 | **DONE**   | Berhenti setelah semua waypoint selesai |
 
----
+
 
 
 
