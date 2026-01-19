@@ -87,6 +87,8 @@ Node navigasi menggunakan 5 state utama:
 
 ---
 
+</p>
+
 ---
 
 ## 🧠 Deskripsi Singkat
@@ -103,3 +105,5 @@ Robot akan:
 Kontrol gerak dikirim melalui topik **`/cmd_vel`**, sedangkan posisi robot dibaca dari **`/diff_cont/odom`**.
 
 ---
+
+
