@@ -86,23 +86,5 @@ Node navigasi menggunakan 5 state utama:
 | **DONE**   | Berhenti setelah semua waypoint selesai |
 
 
-# 🤖 FSM Waypoint Navigation — Gazebo ROS 2 Simulation  
-
-<h1 align="center">
-  Proyek Simulasi Navigasi Robot di Gazebo  
-</h1>
-
-<h3 align="center">
-  Finite State Machine (FSM) + Waypoint Navigation berbasis Odometry
-</h3>
-
-<p align="center">
-  🎓 Proyek Robotika & Simulasi oleh <b>Dhaniel Beny Wardhana</b> <br>
-  🤖 Robot differential drive disimulasikan di Gazebo <br>
-  🧠 Navigasi otonom berbasis FSM (IDLE → ROTATE → MOVE → NEXT → DONE) <br>
-  📍 Menggunakan waypoint manual dan feedback odometry
-</p>
-
----
 
 
