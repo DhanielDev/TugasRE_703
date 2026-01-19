@@ -72,6 +72,8 @@ world_file = os.path.join(
     'obstacles.world'
 )
 
+---
+
 ## 🤖 Algoritma Navigasi (FSM)
 
 Node navigasi menggunakan 5 state utama:
@@ -83,6 +85,7 @@ Node navigasi menggunakan 5 state utama:
 | **NEXT**   | Pindah ke waypoint berikutnya           |
 | **DONE**   | Berhenti setelah semua waypoint selesai |
 
+---
 
 ## 🤖 🚀 Langkah Menjalankan Simulasi
 ### 🛠️ 1) Build Workspace (pertama kali)
